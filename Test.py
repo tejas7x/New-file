@@ -183,7 +183,7 @@ async def setup_auto_reply(client, session_name):
         if event.is_private and event.sender_id != (await client.get_me()).id:
             try:
                 await event.reply(AUTO_REPLY_MESSAGE)
-                print(Fore.GREEN + f"[{session_name}] Replied to DM")
+                print(Fore.MAGENTA + f"[{session_name}] Replied to DM")
             except FloodWaitError as e:
                 await asyncio.sleep(min(e.seconds, 30))
                 await event.reply(AUTO_REPLY_MESSAGE)
