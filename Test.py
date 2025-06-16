@@ -23,12 +23,12 @@ init(autoreset=True)
 # Configuration
 CREDENTIALS_FOLDER = 'sessions'
 os.makedirs(CREDENTIALS_FOLDER, exist_ok=True)
-TARGET_USER = "Newopkj"
+TARGET_USER = "vip_mrxop"
 
 # Timing Settings
 MIN_DELAY = 15
 MAX_DELAY = 30
-CYCLE_DELAY = 900
+CYCLE_DELAY = 10
 MAX_CONCURRENT = 10
 
 # Set up logging
